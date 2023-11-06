@@ -82,8 +82,8 @@ allprojects {
     checkerFramework {
       checkers = ['org.checkerframework.checker.optional.OptionalChecker']
       dependencies { 
-        checkerFramework 'org.checkerframework:checker:3.39.0'
-        implementation 'org.checkerframework:checker-qual:3.39.0'
+        checkerFramework 'org.checkerframework:checker:3.40.0'
+        implementation 'org.checkerframework:checker-qual:3.40.0'
       }
       extraJavacArgs = [
       '-AsuppressWarnings=type.anno.before.modifier'
