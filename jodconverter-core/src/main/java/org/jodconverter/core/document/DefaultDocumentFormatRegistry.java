@@ -478,6 +478,7 @@ public final class DefaultDocumentFormatRegistry { // NOPMD - Disable class name
     return DefaultDocumentFormatRegistryInstanceHolder.getInstance();
   }
 
+  @SuppressWarnings("introduce.eliminate") // introduce-eliminate : unecessary optional instantiation
   private static DocumentFormat byExtension(final String extension) {
     return Optional.ofNullable(getInstance().getFormatByExtension(extension)).orElse(NOOP);
   }

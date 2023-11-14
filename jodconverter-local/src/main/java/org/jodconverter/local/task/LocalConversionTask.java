@@ -77,6 +77,7 @@ public class LocalConversionTask extends AbstractLocalOfficeTask {
    *     {@code target} arguments.
    * @param filterChain The filter chain to use with this task.
    */
+  @SuppressWarnings("introduce.eliminate") // introduce-eliminate : unnecessary optional instantiation
   public LocalConversionTask(
       final @NonNull SourceDocumentSpecs source,
       final @NonNull TargetDocumentSpecs target,
