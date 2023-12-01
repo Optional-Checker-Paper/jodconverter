@@ -1,6 +1,8 @@
 import org.jodconverter.Deps
 import org.jodconverter.Plugins
 
+
+
 // External dependencies for the build script
 buildscript {
     repositories {
@@ -17,6 +19,10 @@ buildscript {
         classpath Plugins.nexusStaging
         classpath Plugins.spotless
     }
+}
+
+plugins {
+  id "com.github.spotbugs" version "5.2.5"
 }
 
 description = '''
@@ -77,6 +83,16 @@ allprojects {
 configure(javaProjects) {
     //println("Configuring java for ${project.name}")
     apply from: "${rootProject.projectDir}/gradle/java-config.gradle"
+    apply plugin: "com.github.spotbugs"
+
+
+    spotbugs {
+         ignoreFailures = true
+         toolVersion = '4.8.2'
+         effort = 'default'
+         reportLevel = 'default'
+         reportsDir = file("$buildDir/spotbugs")
+    }
 }
 
 // Configure Java libraries projects
