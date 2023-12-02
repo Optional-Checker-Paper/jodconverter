@@ -61,6 +61,7 @@ public abstract class AbstractFilterChain implements FilterChain {
    *     can be added to the chain), {@code false} otherwise.
    * @param filters The filters to initially add to the chain.
    */
+  @SuppressWarnings("OptionalOfRedundantMethod") // error-prone-optional-of-redundant-method
   public AbstractFilterChain(final boolean readOnly, final @Nullable Filter... filters) {
 
     this.readOnly = readOnly;
