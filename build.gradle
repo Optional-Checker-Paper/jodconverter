@@ -87,8 +87,10 @@ allprojects {
       }
       extraJavacArgs = [
         '-AsuppressWarnings=type.anno.before.modifier',
-        '-AassumePure'
-      ]
+        '-AassumePure',
+        '-AwarnUnneededSuppressions'
+       ]
+       excludeTests = true
     }
 }
 
