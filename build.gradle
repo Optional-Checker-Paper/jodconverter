@@ -75,22 +75,28 @@ allprojects {
 
     repositories {
         mavenCentral()
+        maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
     }
 
     apply plugin: "java"
     apply plugin: 'org.checkerframework'
     checkerFramework {
-      checkers = ['org.checkerframework.checker.optional.OptionalChecker']
-      dependencies { 
-        checkerFramework 'org.checkerframework:checker:3.40.0'
-        implementation 'org.checkerframework:checker-qual:3.40.0'
-      }
-      extraJavacArgs = [
-        '-AsuppressWarnings=type.anno.before.modifier',
-        '-AassumePure',
-        '-AwarnUnneededSuppressions'
-       ]
-       excludeTests = true
+        checkers = ['org.checkerframework.checker.optional.OptionalChecker']
+        extraJavacArgs = [
+            '-AsuppressWarnings=type.anno.before.modifier',
+            '-AassumePure',
+            '-AwarnUnneededSuppressions'
+        ]
+        excludeTests = true
+    }
+    ext.checkerFrameworkVersion = '3.41.1-SNAPSHOT'
+    dependencies {
+        compileOnly "org.checkerframework:checker-qual:${checkerFrameworkVersion}"
+        testCompileOnly "org.checkerframework:checker-qual:${checkerFrameworkVersion}"
+        checkerFramework "org.checkerframework:checker:${checkerFrameworkVersion}"
+    }
+    configurations.all {
+        resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
     }
 }
 
