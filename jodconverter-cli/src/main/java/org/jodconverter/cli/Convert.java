@@ -264,6 +264,7 @@ public final class Convert {
     return null;
   }
 
+  @SuppressWarnings("introduce.eliminate")  // introduce-eliminate
   private static FilterChain getFilterChain(final ApplicationContext context) {
 
     return Optional.ofNullable(context).map(ctx -> ctx.getBean(FilterChain.class)).orElse(null);

@@ -92,6 +92,7 @@ public class LocalConversionTask extends AbstractLocalOfficeTask {
     this.storeProperties = storeProperties;
   }
 
+  @SuppressWarnings("introduce.eliminate")  // introduce-eliminate
   @Override
   public void execute(final @NonNull OfficeContext context) throws OfficeException {
 

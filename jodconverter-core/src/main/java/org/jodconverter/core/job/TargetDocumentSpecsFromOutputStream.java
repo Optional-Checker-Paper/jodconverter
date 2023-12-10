@@ -60,6 +60,7 @@ public class TargetDocumentSpecsFromOutputStream extends AbstractTargetDocumentS
     this.fileMaker = fileMaker;
   }
 
+  @SuppressWarnings("introduce.eliminate")  // introduce-eliminate
   @Override
   public @NonNull File getFile() {
 

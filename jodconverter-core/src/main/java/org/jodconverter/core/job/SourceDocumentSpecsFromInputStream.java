@@ -67,6 +67,7 @@ public class SourceDocumentSpecsFromInputStream extends AbstractSourceDocumentSp
   public @NonNull File getFile() {
 
     // Write the InputStream to the temp file.
+    @SuppressWarnings("introduce.eliminate")  // introduce-eliminate
     final File tempFile =
         Optional.ofNullable(getFormat())
             .map(format -> fileMaker.makeTemporaryFile(format.getExtension()))
