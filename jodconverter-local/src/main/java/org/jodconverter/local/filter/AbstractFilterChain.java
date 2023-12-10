@@ -61,7 +61,7 @@ public abstract class AbstractFilterChain implements FilterChain {
    *     can be added to the chain), {@code false} otherwise.
    * @param filters The filters to initially add to the chain.
    */
-  @SuppressWarnings("optional:introduce.eliminate") // introduce-eliminate : unnecessary optional instantiation
+  @SuppressWarnings("optional:introduce.eliminate") // introduce-eliminate
   public AbstractFilterChain(final boolean readOnly, final @Nullable Filter... filters) {
 
     this.readOnly = readOnly;
