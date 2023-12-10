@@ -86,8 +86,11 @@ allprojects {
         implementation 'org.checkerframework:checker-qual:3.40.0'
       }
       extraJavacArgs = [
-      '-AsuppressWarnings=type.anno.before.modifier'
-      ]
+        '-AsuppressWarnings=type.anno.before.modifier',
+        '-AassumePure',
+        '-AwarnUnneededSuppressions'
+       ]
+       excludeTests = true
     }
 }
 
