@@ -85,7 +85,8 @@ allprojects {
         extraJavacArgs = [
             '-AsuppressWarnings=type.anno.before.modifier',
             '-AassumePure',
-            '-AwarnUnneededSuppressions'
+            '-AwarnUnneededSuppressions',
+            '-AassumeAssertionsAreEnabled'
         ]
         excludeTests = true
         ext.checkerFrameworkVersion = '3.41.1-SNAPSHOT'
