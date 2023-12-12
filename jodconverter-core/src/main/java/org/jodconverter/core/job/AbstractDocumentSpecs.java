@@ -73,7 +73,7 @@ public abstract class AbstractDocumentSpecs implements DocumentSpecs {
   }
 
   @Override
-  @SuppressWarnings("introduce.eliminate")  // introduce-eliminate
+  @SuppressWarnings("introduce.eliminate")  // style-introduce-eliminate
   public @NonNull String toString() {
     return getClass().getSimpleName()
         + "{"

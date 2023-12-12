@@ -77,7 +77,7 @@ public class LocalConversionTask extends AbstractLocalOfficeTask {
    *     {@code target} arguments.
    * @param filterChain The filter chain to use with this task.
    */
-  @SuppressWarnings("optional:introduce.eliminate") // introduce-eliminate
+  @SuppressWarnings("optional:introduce.eliminate") // style-introduce-eliminate
   public LocalConversionTask(
       final @NonNull SourceDocumentSpecs source,
       final @NonNull TargetDocumentSpecs target,
@@ -92,7 +92,7 @@ public class LocalConversionTask extends AbstractLocalOfficeTask {
     this.storeProperties = storeProperties;
   }
 
-  @SuppressWarnings("introduce.eliminate")  // introduce-eliminate
+  @SuppressWarnings("introduce.eliminate")  // style-introduce-eliminate
   @Override
   public void execute(final @NonNull OfficeContext context) throws OfficeException {
 

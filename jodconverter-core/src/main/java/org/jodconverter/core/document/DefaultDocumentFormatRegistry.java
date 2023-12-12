@@ -478,7 +478,7 @@ public final class DefaultDocumentFormatRegistry { // NOPMD - Disable class name
     return DefaultDocumentFormatRegistryInstanceHolder.getInstance();
   }
 
-  @SuppressWarnings("optional:introduce.eliminate") // introduce-eliminate
+  @SuppressWarnings("optional:introduce.eliminate") // style-introduce-eliminate
   private static DocumentFormat byExtension(final String extension) {
     return Optional.ofNullable(getInstance().getFormatByExtension(extension)).orElse(NOOP);
   }

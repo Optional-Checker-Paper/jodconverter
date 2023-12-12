@@ -95,7 +95,7 @@ public class RemoteConversionTask extends AbstractRemoteOfficeTask {
     }
   }
 
-  @SuppressWarnings("introduce.eliminate")  // introduce-eliminate
+  @SuppressWarnings("introduce.eliminate")  // style-introduce-eliminate
   @Override
   public void execute(final @NonNull OfficeContext context) throws OfficeException {
 
