@@ -90,6 +90,7 @@ allprojects {
             '-AassumePure',
             '-AwarnUnneededSuppressions',
             '-AassumeAssertionsAreEnabled',
+            '-AReportChecker_warns',
             "-Astubs=${project.projectDir}/reportoptional.astub",
         ]
         excludeTests = true
