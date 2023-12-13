@@ -83,7 +83,7 @@ allprojects {
     checkerFramework {
         checkers = [
           'org.checkerframework.checker.optional.OptionalChecker',
-          'org.checkerframework.common.util.report.ReportChecker'
+          'org.checkerframework.common.util.count.report.ReportChecker'
         ]
         extraJavacArgs = [
             '-AsuppressWarnings=type.anno.before.modifier',
