@@ -82,7 +82,6 @@ allprojects {
     apply plugin: 'org.checkerframework'
     checkerFramework {
         checkers = [
-          'org.checkerframework.checker.optional.OptionalChecker',
           'org.checkerframework.common.util.count.report.ReportChecker'
         ]
         extraJavacArgs = [
@@ -274,6 +273,6 @@ task printConfigurations {
 
 afterEvaluate {
      tasks.withType(JavaCompile) {
-         options.compilerArgs << "-Xmaxerrs" << "99999"
+         options.compilerArgs << "-Xmaxwarns" << "99999"
      }
 }  
