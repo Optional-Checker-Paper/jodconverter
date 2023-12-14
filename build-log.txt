@@ -1,0 +1,406 @@
+> Task :buildSrc:compileJava UP-TO-DATE
+> Task :buildSrc:compileGroovy NO-SOURCE
+> Task :buildSrc:processResources NO-SOURCE
+> Task :buildSrc:classes UP-TO-DATE
+> Task :buildSrc:jar UP-TO-DATE
+> Task :buildSrc:assemble UP-TO-DATE
+> Task :buildSrc:compileTestJava NO-SOURCE
+> Task :buildSrc:compileTestGroovy NO-SOURCE
+> Task :buildSrc:processTestResources NO-SOURCE
+> Task :buildSrc:testClasses UP-TO-DATE
+> Task :buildSrc:test NO-SOURCE
+> Task :buildSrc:check UP-TO-DATE
+> Task :buildSrc:build UP-TO-DATE
+> Task :distTar NO-SOURCE
+> Task :jodconverter-cli:createCheckerFrameworkManifest
+> Task :jodconverter-core:createCheckerFrameworkManifest
+
+> Task :jodconverter-core:compileJava
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-core/src/main/java/org/jodconverter/core/document/DefaultDocumentFormatRegistry.java:482: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+    return Optional.ofNullable(getInstance().getFormatByExtension(extension)).orElse(NOOP);
+                                                                                    ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-core/src/main/java/org/jodconverter/core/document/DefaultDocumentFormatRegistry.java:482: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+    return Optional.ofNullable(getInstance().getFormatByExtension(extension)).orElse(NOOP);
+                                                                             ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-core/src/main/java/org/jodconverter/core/document/DefaultDocumentFormatRegistry.java:482: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+    return Optional.ofNullable(getInstance().getFormatByExtension(extension)).orElse(NOOP);
+                              ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-core/src/main/java/org/jodconverter/core/document/DefaultDocumentFormatRegistry.java:482: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+    return Optional.ofNullable(getInstance().getFormatByExtension(extension)).orElse(NOOP);
+                   ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-core/src/main/java/org/jodconverter/core/job/AbstractDocumentSpecs.java:80: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+        + Optional.ofNullable(file).map(File::getName).orElse("null")
+                                                             ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-core/src/main/java/org/jodconverter/core/job/AbstractDocumentSpecs.java:80: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+        + Optional.ofNullable(file).map(File::getName).orElse("null")
+                                                      ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-core/src/main/java/org/jodconverter/core/job/AbstractDocumentSpecs.java:80: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+        + Optional.ofNullable(file).map(File::getName).orElse("null")
+                                       ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-core/src/main/java/org/jodconverter/core/job/AbstractDocumentSpecs.java:80: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+        + Optional.ofNullable(file).map(File::getName).orElse("null")
+                                   ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-core/src/main/java/org/jodconverter/core/job/AbstractDocumentSpecs.java:80: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+        + Optional.ofNullable(file).map(File::getName).orElse("null")
+                             ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-core/src/main/java/org/jodconverter/core/job/AbstractDocumentSpecs.java:80: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+        + Optional.ofNullable(file).map(File::getName).orElse("null")
+                  ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-core/src/main/java/org/jodconverter/core/job/AbstractDocumentSpecs.java:82: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+        + Optional.ofNullable(documentFormat).map(DocumentFormat::getExtension).orElse("null")
+                                                                                      ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-core/src/main/java/org/jodconverter/core/job/AbstractDocumentSpecs.java:82: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+        + Optional.ofNullable(documentFormat).map(DocumentFormat::getExtension).orElse("null")
+                                                                               ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-core/src/main/java/org/jodconverter/core/job/AbstractDocumentSpecs.java:82: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+        + Optional.ofNullable(documentFormat).map(DocumentFormat::getExtension).orElse("null")
+                                                 ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-core/src/main/java/org/jodconverter/core/job/AbstractDocumentSpecs.java:82: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+        + Optional.ofNullable(documentFormat).map(DocumentFormat::getExtension).orElse("null")
+                                             ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-core/src/main/java/org/jodconverter/core/job/AbstractDocumentSpecs.java:82: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+        + Optional.ofNullable(documentFormat).map(DocumentFormat::getExtension).orElse("null")
+                             ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-core/src/main/java/org/jodconverter/core/job/AbstractDocumentSpecs.java:82: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+        + Optional.ofNullable(documentFormat).map(DocumentFormat::getExtension).orElse("null")
+                  ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-core/src/main/java/org/jodconverter/core/job/TargetDocumentSpecsFromOutputStream.java:68: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+        .orElse(fileMaker.makeTemporaryFile());
+               ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-core/src/main/java/org/jodconverter/core/job/TargetDocumentSpecsFromOutputStream.java:68: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+        .orElse(fileMaker.makeTemporaryFile());
+        ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-core/src/main/java/org/jodconverter/core/job/TargetDocumentSpecsFromOutputStream.java:67: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+        .map(format -> fileMaker.makeTemporaryFile(format.getExtension()))
+            ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-core/src/main/java/org/jodconverter/core/job/TargetDocumentSpecsFromOutputStream.java:67: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+        .map(format -> fileMaker.makeTemporaryFile(format.getExtension()))
+        ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-core/src/main/java/org/jodconverter/core/job/TargetDocumentSpecsFromOutputStream.java:66: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+    return Optional.ofNullable(getFormat())
+                              ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-core/src/main/java/org/jodconverter/core/job/TargetDocumentSpecsFromOutputStream.java:66: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+    return Optional.ofNullable(getFormat())
+                   ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-core/src/main/java/org/jodconverter/core/job/SourceDocumentSpecsFromInputStream.java:73: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            .orElse(fileMaker.makeTemporaryFile());
+                   ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-core/src/main/java/org/jodconverter/core/job/SourceDocumentSpecsFromInputStream.java:73: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+            .orElse(fileMaker.makeTemporaryFile());
+            ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-core/src/main/java/org/jodconverter/core/job/SourceDocumentSpecsFromInputStream.java:72: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            .map(format -> fileMaker.makeTemporaryFile(format.getExtension()))
+                ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-core/src/main/java/org/jodconverter/core/job/SourceDocumentSpecsFromInputStream.java:72: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            .map(format -> fileMaker.makeTemporaryFile(format.getExtension()))
+            ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-core/src/main/java/org/jodconverter/core/job/SourceDocumentSpecsFromInputStream.java:71: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+        Optional.ofNullable(getFormat())
+                           ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-core/src/main/java/org/jodconverter/core/job/SourceDocumentSpecsFromInputStream.java:71: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+        Optional.ofNullable(getFormat())
+                ^
+28 warnings
+
+> Task :jodconverter-local:createCheckerFrameworkManifest
+
+> Task :jodconverter-local:compileJava
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-local/src/main/java/org/jodconverter/local/office/OfficeConnection.java:198: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+    return Lo.qiOptional(XDesktop.class, desktopService).orElse(null);
+                                                               ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-local/src/main/java/org/jodconverter/local/office/OfficeConnection.java:198: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+    return Lo.qiOptional(XDesktop.class, desktopService).orElse(null);
+                                                        ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-local/src/main/java/org/jodconverter/local/office/OfficeConnection.java:292: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<X>orElseThrow(java.util.function.Supplier<? extends X>) [METHOD]
+            .orElseThrow(
+                        ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-local/src/main/java/org/jodconverter/local/office/OfficeConnection.java:292: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<X>orElseThrow(java.util.function.Supplier<? extends X>) [METHOD]
+            .orElseThrow(
+            ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-local/src/main/java/org/jodconverter/local/office/LocalOfficeUtils.java:152: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+          .orElse(null);
+                 ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-local/src/main/java/org/jodconverter/local/office/LocalOfficeUtils.java:152: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+          .orElse(null);
+          ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-local/src/main/java/org/jodconverter/local/office/LocalOfficeUtils.java:151: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+          .map(File::new)
+              ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-local/src/main/java/org/jodconverter/local/office/LocalOfficeUtils.java:151: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+          .map(File::new)
+          ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-local/src/main/java/org/jodconverter/local/office/utils/Lo.java:91: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+  public static <T> @NonNull Optional<T> qiOptional(
+                                         ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-local/src/main/java/org/jodconverter/local/office/utils/Lo.java:91: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+  public static <T> @NonNull Optional<T> qiOptional(
+                                         ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-local/src/main/java/org/jodconverter/local/office/utils/Lo.java:94: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional [CLASS]
+    return Optional.ofNullable(UnoRuntime.getInstance().queryInterface(type, object));
+                              ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-local/src/main/java/org/jodconverter/local/office/utils/Lo.java:94: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+    return Optional.ofNullable(UnoRuntime.getInstance().queryInterface(type, object));
+                              ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-local/src/main/java/org/jodconverter/local/office/utils/Lo.java:94: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+    return Optional.ofNullable(UnoRuntime.getInstance().queryInterface(type, object));
+                   ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-local/src/main/java/org/jodconverter/local/office/utils/Lo.java:181: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+          .orElse(null);
+                 ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-local/src/main/java/org/jodconverter/local/office/utils/Lo.java:181: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+          .orElse(null);
+          ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-local/src/main/java/org/jodconverter/local/office/utils/Calc.java:59: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+    return Lo.qiOptional(XSpreadsheetDocument.class, document).orElse(null);
+                                                                     ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-local/src/main/java/org/jodconverter/local/office/utils/Calc.java:59: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+    return Lo.qiOptional(XSpreadsheetDocument.class, document).orElse(null);
+                                                              ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-local/src/main/java/org/jodconverter/local/office/utils/Write.java:68: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+    return Lo.qiOptional(XTextDocument.class, document).orElse(null);
+                                                              ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-local/src/main/java/org/jodconverter/local/office/utils/Write.java:68: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+    return Lo.qiOptional(XTextDocument.class, document).orElse(null);
+                                                       ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-local/src/main/java/org/jodconverter/local/task/LocalConversionTask.java:90: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+    this.filterChain = Optional.ofNullable(filterChain).orElse(RefreshFilter.CHAIN).copy();
+                                                              ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-local/src/main/java/org/jodconverter/local/task/LocalConversionTask.java:90: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+    this.filterChain = Optional.ofNullable(filterChain).orElse(RefreshFilter.CHAIN).copy();
+                                                       ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-local/src/main/java/org/jodconverter/local/task/LocalConversionTask.java:90: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+    this.filterChain = Optional.ofNullable(filterChain).orElse(RefreshFilter.CHAIN).copy();
+                                          ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-local/src/main/java/org/jodconverter/local/task/LocalConversionTask.java:90: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+    this.filterChain = Optional.ofNullable(filterChain).orElse(RefreshFilter.CHAIN).copy();
+                               ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-local/src/main/java/org/jodconverter/local/task/LocalConversionTask.java:103: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+              .orElse("?"),
+                     ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-local/src/main/java/org/jodconverter/local/task/LocalConversionTask.java:103: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+              .orElse("?"),
+              ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-local/src/main/java/org/jodconverter/local/task/LocalConversionTask.java:102: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+              .map(DocumentFormat::getExtension)
+                  ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-local/src/main/java/org/jodconverter/local/task/LocalConversionTask.java:102: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+              .map(DocumentFormat::getExtension)
+              ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-local/src/main/java/org/jodconverter/local/task/LocalConversionTask.java:101: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+              .map(DocumentSpecs::getFormat)
+                  ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-local/src/main/java/org/jodconverter/local/task/LocalConversionTask.java:101: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+              .map(DocumentSpecs::getFormat)
+              ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-local/src/main/java/org/jodconverter/local/task/LocalConversionTask.java:100: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>of(T) [METHOD]
+          Optional.of(source)
+                     ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-local/src/main/java/org/jodconverter/local/task/LocalConversionTask.java:100: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>of(T) [METHOD]
+          Optional.of(source)
+                  ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-local/src/main/java/org/jodconverter/local/task/LocalConversionTask.java:107: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+              .orElse("?"));
+                     ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-local/src/main/java/org/jodconverter/local/task/LocalConversionTask.java:107: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+              .orElse("?"));
+              ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-local/src/main/java/org/jodconverter/local/task/LocalConversionTask.java:106: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+              .map(DocumentFormat::getExtension)
+                  ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-local/src/main/java/org/jodconverter/local/task/LocalConversionTask.java:106: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+              .map(DocumentFormat::getExtension)
+              ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-local/src/main/java/org/jodconverter/local/task/LocalConversionTask.java:105: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+              .map(DocumentSpecs::getFormat)
+                  ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-local/src/main/java/org/jodconverter/local/task/LocalConversionTask.java:105: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+              .map(DocumentSpecs::getFormat)
+              ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-local/src/main/java/org/jodconverter/local/task/LocalConversionTask.java:104: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>of(T) [METHOD]
+          Optional.of(target)
+                     ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-local/src/main/java/org/jodconverter/local/task/LocalConversionTask.java:104: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>of(T) [METHOD]
+          Optional.of(target)
+                  ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-local/src/main/java/org/jodconverter/local/task/AbstractLocalOfficeTask.java:250: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+      final XCloseable closeable = Lo.qiOptional(XCloseable.class, document).orElse(null);
+                                                                                   ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-local/src/main/java/org/jodconverter/local/task/AbstractLocalOfficeTask.java:250: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+      final XCloseable closeable = Lo.qiOptional(XCloseable.class, document).orElse(null);
+                                                                            ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-local/src/main/java/org/jodconverter/local/filter/AbstractFilterChain.java:69: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+        Arrays.stream(Optional.of(filters).orElse(new Filter[0])).collect(Collectors.toList());
+                                                 ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-local/src/main/java/org/jodconverter/local/filter/AbstractFilterChain.java:69: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+        Arrays.stream(Optional.of(filters).orElse(new Filter[0])).collect(Collectors.toList());
+                                          ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-local/src/main/java/org/jodconverter/local/filter/AbstractFilterChain.java:69: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>of(T) [METHOD]
+        Arrays.stream(Optional.of(filters).orElse(new Filter[0])).collect(Collectors.toList());
+                                 ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-local/src/main/java/org/jodconverter/local/filter/AbstractFilterChain.java:69: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>of(T) [METHOD]
+        Arrays.stream(Optional.of(filters).orElse(new Filter[0])).collect(Collectors.toList());
+                              ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-local/src/main/java/org/jodconverter/local/filter/RefreshFilter.java:88: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.ifPresent(java.util.function.Consumer<? super T>) [METHOD]
+    Lo.qiOptional(XRefreshable.class, document).ifPresent(XRefreshable::refresh);
+                                                         ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-local/src/main/java/org/jodconverter/local/filter/RefreshFilter.java:88: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.ifPresent(java.util.function.Consumer<? super T>) [METHOD]
+    Lo.qiOptional(XRefreshable.class, document).ifPresent(XRefreshable::refresh);
+                                               ^
+47 warnings
+
+> Task :jodconverter-remote:createCheckerFrameworkManifest
+
+> Task :jodconverter-remote:compileJava
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-remote/src/main/java/org/jodconverter/remote/office/RemoteOfficeManagerPoolEntry.java:98: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+          .orElse(null);
+                 ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-remote/src/main/java/org/jodconverter/remote/office/RemoteOfficeManagerPoolEntry.java:98: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+          .orElse(null);
+          ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-remote/src/main/java/org/jodconverter/remote/task/RemoteConversionTask.java:140: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.ifPresent(java.util.function.Consumer<? super T>) [METHOD]
+            .ifPresent(
+                      ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-remote/src/main/java/org/jodconverter/remote/task/RemoteConversionTask.java:140: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.ifPresent(java.util.function.Consumer<? super T>) [METHOD]
+            .ifPresent(
+            ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-remote/src/main/java/org/jodconverter/remote/task/RemoteConversionTask.java:139: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            .map(DocumentFormat::getInputFamily)
+                ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-remote/src/main/java/org/jodconverter/remote/task/RemoteConversionTask.java:139: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+            .map(DocumentFormat::getInputFamily)
+            ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-remote/src/main/java/org/jodconverter/remote/task/RemoteConversionTask.java:138: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+        Optional.ofNullable(source.getFormat())
+                           ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-remote/src/main/java/org/jodconverter/remote/task/RemoteConversionTask.java:138: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+        Optional.ofNullable(source.getFormat())
+                ^
+8 warnings
+
+> Task :jodconverter-cli:compileJava
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-cli/src/main/java/org/jodconverter/cli/Convert.java:269: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+    return Optional.ofNullable(context).map(ctx -> ctx.getBean(FilterChain.class)).orElse(null);
+                                                                                         ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-cli/src/main/java/org/jodconverter/cli/Convert.java:269: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.orElse(T) [METHOD]
+    return Optional.ofNullable(context).map(ctx -> ctx.getBean(FilterChain.class)).orElse(null);
+                                                                                  ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-cli/src/main/java/org/jodconverter/cli/Convert.java:269: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+    return Optional.ofNullable(context).map(ctx -> ctx.getBean(FilterChain.class)).orElse(null);
+                                           ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-cli/src/main/java/org/jodconverter/cli/Convert.java:269: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<U>map(java.util.function.Function<? super T,? extends U>) [METHOD]
+    return Optional.ofNullable(context).map(ctx -> ctx.getBean(FilterChain.class)).orElse(null);
+                                       ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-cli/src/main/java/org/jodconverter/cli/Convert.java:269: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+    return Optional.ofNullable(context).map(ctx -> ctx.getBean(FilterChain.class)).orElse(null);
+                              ^
+/tmp/experiments/optional-paper-counts-repos/jodconverter/jodconverter-cli/src/main/java/org/jodconverter/cli/Convert.java:269: warning: [usage] Usage of java.util.Optional [CLASS] by java.util.Optional.<T>ofNullable(T) [METHOD]
+    return Optional.ofNullable(context).map(ctx -> ctx.getBean(FilterChain.class)).orElse(null);
+                   ^
+6 warnings
+
+> Task :jodconverter-cli:copyLicense
+> Task :jodconverter-cli:processResources
+> Task :jodconverter-cli:classes
+> Task :jodconverter-cli:jar
+> Task :jodconverter-core:copyLicense
+> Task :jodconverter-core:processResources
+> Task :jodconverter-core:classes
+> Task :jodconverter-core:jar
+> Task :jodconverter-local:copyLicense
+> Task :jodconverter-local:processResources
+> Task :jodconverter-local:classes
+> Task :jodconverter-local:jar
+> Task :jodconverter-remote:copyLicense
+> Task :jodconverter-remote:processResources
+> Task :jodconverter-remote:classes
+> Task :jodconverter-remote:jar
+> Task :jodconverter-cli:startScripts
+> Task :jodconverter-cli:distZip
+
+> Task :jodconverter-core:javadoc
+javadoc: warning - invalid usage of tag &DbPAR
+javadoc: warning - invalid usage of tag &System
+javadoc: warning - invalid usage of tag &DbPAR
+javadoc: warning - invalid usage of tag &System
+4 warnings
+
+> Task :jodconverter-core:javadocJar
+> Task :jodconverter-core:sourcesJar
+> Task :jodconverter-core:distZip
+> Task :jodconverter-local:javadoc
+> Task :jodconverter-local:javadocJar
+> Task :jodconverter-local:sourcesJar
+> Task :jodconverter-local:distZip
+> Task :jodconverter-local-lo:createCheckerFrameworkManifest
+> Task :jodconverter-local-lo:compileJava NO-SOURCE
+> Task :jodconverter-local-lo:copyLicense
+> Task :jodconverter-local-lo:processResources
+> Task :jodconverter-local-lo:classes
+> Task :jodconverter-local-lo:jar
+> Task :jodconverter-local-lo:javadoc NO-SOURCE
+> Task :jodconverter-local-lo:javadocJar
+> Task :jodconverter-local-lo:sourcesJar
+> Task :jodconverter-local-lo:distZip
+> Task :jodconverter-local-oo:createCheckerFrameworkManifest
+> Task :jodconverter-local-oo:compileJava NO-SOURCE
+> Task :jodconverter-local-oo:copyLicense
+> Task :jodconverter-local-oo:processResources
+> Task :jodconverter-local-oo:classes
+> Task :jodconverter-local-oo:jar
+> Task :jodconverter-local-oo:javadoc NO-SOURCE
+> Task :jodconverter-local-oo:javadocJar
+> Task :jodconverter-local-oo:sourcesJar
+> Task :jodconverter-local-oo:distZip
+> Task :jodconverter-remote:javadoc
+> Task :jodconverter-remote:javadocJar
+> Task :jodconverter-remote:sourcesJar
+> Task :jodconverter-remote:distZip
+> Task :jodconverter-spring:createCheckerFrameworkManifest
+> Task :jodconverter-spring:compileJava
+> Task :jodconverter-spring:copyLicense
+> Task :jodconverter-spring:processResources
+> Task :jodconverter-spring:classes
+> Task :jodconverter-spring:jar
+> Task :jodconverter-spring:javadoc
+> Task :jodconverter-spring:javadocJar
+> Task :jodconverter-spring:sourcesJar
+> Task :jodconverter-spring:distZip
+> Task :jodconverter-spring-boot-starter:createCheckerFrameworkManifest
+> Task :jodconverter-spring-boot-starter:compileJava
+> Task :jodconverter-spring-boot-starter:copyLicense
+> Task :jodconverter-spring-boot-starter:processResources
+> Task :jodconverter-spring-boot-starter:classes
+> Task :jodconverter-spring-boot-starter:jar
+> Task :jodconverter-spring-boot-starter:javadoc
+> Task :jodconverter-spring-boot-starter:javadocJar
+> Task :jodconverter-spring-boot-starter:sourcesJar
+> Task :jodconverter-spring-boot-starter:distZip
+> Task :distZip
+> Task :createCheckerFrameworkManifest
+> Task :compileJava NO-SOURCE
+> Task :processResources NO-SOURCE
+> Task :classes UP-TO-DATE
+> Task :jar
+> Task :assemble
+> Task :jodconverter-cli:distTar
+> Task :jodconverter-cli:javadoc
+> Task :jodconverter-cli:javadocJar
+> Task :jodconverter-cli:sourcesJar
+> Task :jodconverter-cli:assemble
+> Task :jodconverter-core:distTar
+> Task :jodconverter-core:assemble
+> Task :jodconverter-local:distTar
+> Task :jodconverter-local:assemble
+> Task :jodconverter-local-lo:distTar
+> Task :jodconverter-local-lo:assemble
+> Task :jodconverter-local-oo:distTar
+> Task :jodconverter-local-oo:assemble
+> Task :jodconverter-remote:distTar
+> Task :jodconverter-remote:assemble
+> Task :jodconverter-spring:distTar
+> Task :jodconverter-spring:assemble
+> Task :jodconverter-spring-boot-starter:distTar
+> Task :jodconverter-spring-boot-starter:assemble
+
+BUILD SUCCESSFUL in 26s
+82 actionable tasks: 80 executed, 2 up-to-date
