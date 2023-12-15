@@ -298,19 +298,19 @@
                    ^
 6 warnings
 
-> Task :jodconverter-cli:copyLicense
+> Task :jodconverter-cli:copyLicense UP-TO-DATE
 > Task :jodconverter-cli:processResources
 > Task :jodconverter-cli:classes
 > Task :jodconverter-cli:jar
-> Task :jodconverter-core:copyLicense
+> Task :jodconverter-core:copyLicense UP-TO-DATE
 > Task :jodconverter-core:processResources
 > Task :jodconverter-core:classes
 > Task :jodconverter-core:jar
-> Task :jodconverter-local:copyLicense
+> Task :jodconverter-local:copyLicense UP-TO-DATE
 > Task :jodconverter-local:processResources
 > Task :jodconverter-local:classes
 > Task :jodconverter-local:jar
-> Task :jodconverter-remote:copyLicense
+> Task :jodconverter-remote:copyLicense UP-TO-DATE
 > Task :jodconverter-remote:processResources
 > Task :jodconverter-remote:classes
 > Task :jodconverter-remote:jar
@@ -333,7 +333,7 @@ javadoc: warning - invalid usage of tag &System
 > Task :jodconverter-local:distZip
 > Task :jodconverter-local-lo:createCheckerFrameworkManifest
 > Task :jodconverter-local-lo:compileJava NO-SOURCE
-> Task :jodconverter-local-lo:copyLicense
+> Task :jodconverter-local-lo:copyLicense UP-TO-DATE
 > Task :jodconverter-local-lo:processResources
 > Task :jodconverter-local-lo:classes
 > Task :jodconverter-local-lo:jar
@@ -343,7 +343,7 @@ javadoc: warning - invalid usage of tag &System
 > Task :jodconverter-local-lo:distZip
 > Task :jodconverter-local-oo:createCheckerFrameworkManifest
 > Task :jodconverter-local-oo:compileJava NO-SOURCE
-> Task :jodconverter-local-oo:copyLicense
+> Task :jodconverter-local-oo:copyLicense UP-TO-DATE
 > Task :jodconverter-local-oo:processResources
 > Task :jodconverter-local-oo:classes
 > Task :jodconverter-local-oo:jar
@@ -357,7 +357,7 @@ javadoc: warning - invalid usage of tag &System
 > Task :jodconverter-remote:distZip
 > Task :jodconverter-spring:createCheckerFrameworkManifest
 > Task :jodconverter-spring:compileJava
-> Task :jodconverter-spring:copyLicense
+> Task :jodconverter-spring:copyLicense UP-TO-DATE
 > Task :jodconverter-spring:processResources
 > Task :jodconverter-spring:classes
 > Task :jodconverter-spring:jar
@@ -367,7 +367,7 @@ javadoc: warning - invalid usage of tag &System
 > Task :jodconverter-spring:distZip
 > Task :jodconverter-spring-boot-starter:createCheckerFrameworkManifest
 > Task :jodconverter-spring-boot-starter:compileJava
-> Task :jodconverter-spring-boot-starter:copyLicense
+> Task :jodconverter-spring-boot-starter:copyLicense UP-TO-DATE
 > Task :jodconverter-spring-boot-starter:processResources
 > Task :jodconverter-spring-boot-starter:classes
 > Task :jodconverter-spring-boot-starter:jar
@@ -402,5 +402,5 @@ javadoc: warning - invalid usage of tag &System
 > Task :jodconverter-spring-boot-starter:distTar
 > Task :jodconverter-spring-boot-starter:assemble
 
-BUILD SUCCESSFUL in 26s
-82 actionable tasks: 80 executed, 2 up-to-date
+BUILD SUCCESSFUL in 31s
+82 actionable tasks: 72 executed, 10 up-to-date
