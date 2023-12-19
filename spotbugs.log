@@ -1,0 +1,94 @@
+> Task :jodconverter-cli:spotbugsMain
+M B RV: Exceptional return value of java.io.File.mkdirs() ignored in org.jodconverter.cli.CliConverter.prepareOutputDir(File)  At CliConverter.java:[line 239]
+H I Dm: Found reliance on default encoding in new org.jodconverter.cli.CliConverter(DocumentConverter): new java.io.PrintWriter(OutputStream)  At CliConverter.java:[line 53]
+SpotBugs ended with exit code 1
+
+> Task :jodconverter-spring-boot-starter:spotbugsMain
+M V EI: org.jodconverter.boot.autoconfigure.JodConverterRemoteProperties$SslProperties.getCiphers() may expose internal representation by returning JodConverterRemoteProperties$SslProperties.ciphers  At JodConverterRemoteProperties.java:[line 219]
+M V EI: org.jodconverter.boot.autoconfigure.JodConverterRemoteProperties$SslProperties.getEnabledProtocols() may expose internal representation by returning JodConverterRemoteProperties$SslProperties.enabledProtocols  At JodConverterRemoteProperties.java:[line 275]
+M V EI2: org.jodconverter.boot.autoconfigure.JodConverterRemoteProperties$SslProperties.setCiphers(String[]) may expose internal representation by storing an externally mutable object into JodConverterRemoteProperties$SslProperties.ciphers  At JodConverterRemoteProperties.java:[line 223]
+M V EI2: org.jodconverter.boot.autoconfigure.JodConverterRemoteProperties$SslProperties.setEnabledProtocols(String[]) may expose internal representation by storing an externally mutable object into JodConverterRemoteProperties$SslProperties.enabledProtocols  At JodConverterRemoteProperties.java:[line 279]
+M V EI: org.jodconverter.boot.autoconfigure.JodConverterLocalProperties.getPortNumbers() may expose internal representation by returning JodConverterLocalProperties.portNumbers  At JodConverterLocalProperties.java:[line 196]
+M V EI: org.jodconverter.boot.autoconfigure.JodConverterLocalProperties.getFormatOptions() may expose internal representation by returning JodConverterLocalProperties.formatOptions  At JodConverterLocalProperties.java:[line 317]
+M V EI2: org.jodconverter.boot.autoconfigure.JodConverterLocalProperties.setPortNumbers(int[]) may expose internal representation by storing an externally mutable object into JodConverterLocalProperties.portNumbers  At JodConverterLocalProperties.java:[line 200]
+M V EI2: org.jodconverter.boot.autoconfigure.JodConverterLocalProperties.setFormatOptions(Map) may expose internal representation by storing an externally mutable object into JodConverterLocalProperties.formatOptions  At JodConverterLocalProperties.java:[line 322]
+M V EI2: org.jodconverter.boot.autoconfigure.JodConverterRemoteProperties.setSsl(JodConverterRemoteProperties$SslProperties) may expose internal representation by storing an externally mutable object into JodConverterRemoteProperties.ssl  At JodConverterRemoteProperties.java:[line 156]
+M V EI: org.jodconverter.boot.autoconfigure.JodConverterRemoteProperties.getSsl() may expose internal representation by returning JodConverterRemoteProperties.ssl  At JodConverterRemoteProperties.java:[line 152]
+M D NP: Possible null pointer dereference in org.jodconverter.boot.autoconfigure.JodConverterLocalAutoConfiguration.documentFormatRegistry(ResourceLoader) due to return value of called method  Method invoked at JodConverterLocalAutoConfiguration.java:[line 129]
+M D NP: Possible null pointer dereference in org.jodconverter.boot.autoconfigure.JodConverterLocalAutoConfiguration.documentFormatRegistry(ResourceLoader) due to return value of called method  Method invoked at JodConverterLocalAutoConfiguration.java:[line 123]
+M V EI2: new org.jodconverter.boot.autoconfigure.JodConverterLocalAutoConfiguration(JodConverterLocalProperties) may expose internal representation by storing an externally mutable object into JodConverterLocalAutoConfiguration.properties  At JodConverterLocalAutoConfiguration.java:[line 73]
+M D NP: Possible null pointer dereference in org.jodconverter.boot.autoconfigure.JodConverterRemoteAutoConfiguration.createOfficeManager() due to return value of called method  Dereferenced at JodConverterRemoteAutoConfiguration.java:[line 73]
+M V EI2: new org.jodconverter.boot.autoconfigure.JodConverterRemoteAutoConfiguration(JodConverterRemoteProperties) may expose internal representation by storing an externally mutable object into JodConverterRemoteAutoConfiguration.properties  At JodConverterRemoteAutoConfiguration.java:[line 55]
+SpotBugs ended with exit code 1
+
+> Task :jodconverter-core:spotbugsMain
+M V EI: org.jodconverter.core.document.DocumentFormatProperties.getStore() may expose internal representation by returning DocumentFormatProperties.store  At DocumentFormatProperties.java:[line 56]
+M V EI: org.jodconverter.core.document.DocumentFormatProperties.getLoad() may expose internal representation by returning DocumentFormatProperties.load  At DocumentFormatProperties.java:[line 46]
+H D NP: collection must be non-null but is marked as nullable  At AssertUtils.java:[lines 80-86]
+H D NP: object must be non-null but is marked as nullable  At AssertUtils.java:[lines 131-134]
+H D NP: str must be non-null but is marked as nullable  At AssertUtils.java:[lines 115-121]
+H D NP: str must be non-null but is marked as nullable  At AssertUtils.java:[lines 55-66]
+M B RV: Exceptional return value of java.io.File.setLastModified(long) ignored in org.jodconverter.core.util.FileUtils$CopyDir.visitFile(Path, BasicFileAttributes)  At FileUtils.java:[line 318]
+M V EI: org.jodconverter.core.document.DocumentFormat.getLoadProperties() may expose internal representation by returning DocumentFormat.loadProperties  At DocumentFormat.java:[line 215]
+M V EI: org.jodconverter.core.document.DocumentFormat.getExtensions() may expose internal representation by returning DocumentFormat.extensions  At DocumentFormat.java:[line 197]
+M V EI: org.jodconverter.core.document.DocumentFormat.getStoreProperties() may expose internal representation by returning DocumentFormat.storeProperties  At DocumentFormat.java:[line 245]
+M D NP: Possible null pointer dereference in org.jodconverter.core.document.DocumentFormat$Builder.from(DocumentFormat) due to return value of called method  Dereferenced at DocumentFormat.java:[line 334]
+M D NP: Possible null pointer dereference in org.jodconverter.core.document.DocumentFormat$Builder.from(DocumentFormat) due to return value of called method  Method invoked at DocumentFormat.java:[line 329]
+
+> Task :jodconverter-remote:spotbugsMain
+M V EI2: org.jodconverter.remote.office.RemoteOfficeManager$Builder.sslConfig(SslConfig) may expose internal representation by storing an externally mutable object into RemoteOfficeManager$Builder.sslConfig  At RemoteOfficeManager.java:[line 188]
+M V EI: org.jodconverter.remote.ssl.SslConfig.getEnabledProtocols() may expose internal representation by returning SslConfig.enabledProtocols  At SslConfig.java:[line 201]
+M V EI: org.jodconverter.remote.ssl.SslConfig.getCiphers() may expose internal representation by returning SslConfig.ciphers  At SslConfig.java:[line 75]
+M V EI2: org.jodconverter.remote.ssl.SslConfig.setEnabledProtocols(String[]) may expose internal representation by storing an externally mutable object into SslConfig.enabledProtocols  At SslConfig.java:[line 210]
+M V EI2: org.jodconverter.remote.ssl.SslConfig.setCiphers(String[]) may expose internal representation by storing an externally mutable object into SslConfig.ciphers  At SslConfig.java:[line 84]
+M D NP: Possible null pointer dereference in org.jodconverter.remote.task.RemoteConversionTask.buildUrl(String) due to return value of called method  Method invoked at RemoteConversionTask.java:[line 182]
+M D NP: Possible null pointer dereference in org.jodconverter.remote.task.RemoteConversionTask.execute(OfficeContext) due to return value of called method  Method invoked at RemoteConversionTask.java:[line 134]
+M D NP: Possible null pointer dereference in org.jodconverter.remote.office.RemoteOfficeManagerPoolEntry.configureKeyMaterial(SSLContextBuilder) due to return value of called method  Method invoked at RemoteOfficeManagerPoolEntry.java:[line 233]
+M D NP: Possible null pointer dereference in org.jodconverter.remote.office.RemoteOfficeManagerPoolEntry.configureKeyMaterial(SSLContextBuilder) due to return value of called method  Dereferenced at RemoteOfficeManagerPoolEntry.java:[line 234]
+SpotBugs ended with exit code 1
+
+> Task :jodconverter-local:spotbugsMain
+M V EI2: new org.jodconverter.local.process.PumpStreamHandler(StreamPumper, StreamPumper) may expose internal representation by storing an externally mutable object into PumpStreamHandler.errorPumper  At PumpStreamHandler.java:[line 40]
+M V EI2: new org.jodconverter.local.process.PumpStreamHandler(StreamPumper, StreamPumper) may expose internal representation by storing an externally mutable object into PumpStreamHandler.outputPumper  At PumpStreamHandler.java:[line 39]
+M V EI: org.jodconverter.local.process.PumpStreamHandler.getErrorPumper() may expose internal representation by returning PumpStreamHandler.errorPumper  At PumpStreamHandler.java:[line 58]
+M V EI: org.jodconverter.local.process.PumpStreamHandler.getOutputPumper() may expose internal representation by returning PumpStreamHandler.outputPumper  At PumpStreamHandler.java:[line 49]
+M V EI2: new org.jodconverter.local.office.ConnectRetryable(OfficeConnection) may expose internal representation by storing an externally mutable object into ConnectRetryable.connection  At ConnectRetryable.java:[line 41]
+
+> Task :jodconverter-core:spotbugsMain
+M D NP: Possible null pointer dereference in org.jodconverter.core.util.FileUtils.getBaseName(String) due to return value of called method  Dereferenced at FileUtils.java:[line 226]
+M D NP: Possible null pointer dereference in org.jodconverter.core.util.FileUtils.getExtension(String) due to return value of called method  Dereferenced at FileUtils.java:[line 247]
+M D NP: Possible null pointer dereference in org.jodconverter.core.util.FileUtils.getName(String) due to return value of called method  Dereferenced at FileUtils.java:[line 269]
+M B RV: Exceptional return value of java.io.File.setLastModified(long) ignored in org.jodconverter.core.util.FileUtils.copyFile(File, File, CopyOption[])  At FileUtils.java:[line 88]
+M B RV: Exceptional return value of java.io.File.setLastModified(long) ignored in org.jodconverter.core.util.FileUtils.copyFileToDirectory(File, File, CopyOption[])  At FileUtils.java:[line 119]
+M B RV: Exceptional return value of java.io.File.mkdirs() ignored in org.jodconverter.core.util.FileUtils.copyFileToDirectory(File, File, CopyOption[])  At FileUtils.java:[line 115]
+M D NP: Possible null pointer dereference in org.jodconverter.core.job.AbstractConverter.convert(File) due to return value of called method  Method invoked at AbstractConverter.java:[line 69]
+M V EI2: new org.jodconverter.core.job.TargetDocumentSpecsFromOutputStream(OutputStream, TemporaryFileMaker, boolean) may expose internal representation by storing an externally mutable object into TargetDocumentSpecsFromOutputStream.outputStream  At TargetDocumentSpecsFromOutputStream.java:[line 58]
+M D NP: Possible null pointer dereference in org.jodconverter.core.job.AbstractConversionJobWithSourceFormatUnspecified.to(File) due to return value of called method  Method invoked at AbstractConversionJobWithSourceFormatUnspecified.java:[line 80]
+M B RV: Exceptional return value of java.io.File.mkdirs() ignored in org.jodconverter.core.office.AbstractOfficeManagerPool.prepareTempDir()  At AbstractOfficeManagerPool.java:[line 237]
+M D RCN: Redundant nullcheck of input which is known to be null in org.jodconverter.core.document.DefaultDocumentFormatRegistryInstanceHolder.loadRegistry(String)  Redundant null check at DefaultDocumentFormatRegistryInstanceHolder.java:[line 83]
+M D NP: Load of known null value in org.jodconverter.core.document.DefaultDocumentFormatRegistryInstanceHolder.loadRegistry(String)  At DefaultDocumentFormatRegistryInstanceHolder.java:[line 83]
+M D UrF: Unread public/protected field: org.jodconverter.core.job.AbstractConverter$AbstractConverterBuilder.formatRegistry  At AbstractConverter.java:[line 158]
+M D UrF: Unread public/protected field: org.jodconverter.core.office.AbstractOfficeManagerPool$AbstractOfficeManagerPoolBuilder.taskQueueTimeout  At AbstractOfficeManagerPool.java:[line 275]
+M D UrF: Unread public/protected field: org.jodconverter.core.office.AbstractOfficeManagerPool$AbstractOfficeManagerPoolBuilder.taskExecutionTimeout  At AbstractOfficeManagerPool.java:[line 274]
+M D UrF: Unread public/protected field: org.jodconverter.core.office.AbstractOfficeManagerPool$AbstractOfficeManagerPoolBuilder.workingDir  At AbstractOfficeManagerPool.java:[line 273]
+M D UrF: Unread public/protected field: org.jodconverter.core.office.AbstractOfficeManagerPool$AbstractOfficeManagerPoolBuilder.install  At AbstractOfficeManagerPool.java:[line 301]
+M D UrF: Unread public/protected field: org.jodconverter.core.job.AbstractConverter$AbstractConverterBuilder.officeManager  At AbstractConverter.java:[line 144]
+M M IS: Inconsistent synchronization of org.jodconverter.core.office.AbstractOfficeManagerPool.entries; locked 66% of time  Unsynchronized access at AbstractOfficeManagerPool.java:[line 101]
+SpotBugs ended with exit code 1
+
+> Task :jodconverter-local:spotbugsMain
+M V EI: org.jodconverter.local.filter.text.AbstractTextContentInserterFilter.getRectSize() may expose internal representation by returning AbstractTextContentInserterFilter.rectSize  At AbstractTextContentInserterFilter.java:[line 210]
+M V EI: org.jodconverter.local.filter.text.AbstractTextContentInserterFilter.getShapeProperties() may expose internal representation by returning AbstractTextContentInserterFilter.shapeProperties  At AbstractTextContentInserterFilter.java:[line 228]
+M D NP: Possible null pointer dereference in org.jodconverter.local.task.AbstractLocalOfficeTask.getLoadProperties() due to return value of called method  Dereferenced at AbstractLocalOfficeTask.java:[line 180]
+M V EI2: new org.jodconverter.local.task.AbstractLocalOfficeTask(SourceDocumentSpecs, boolean, Map) may expose internal representation by storing an externally mutable object into AbstractLocalOfficeTask.loadProperties  At AbstractLocalOfficeTask.java:[line 172]
+M D NP: Possible null pointer dereference in org.jodconverter.local.task.LocalConversionTask.getStoreProperties(XComponent) due to return value of called method  Dereferenced at LocalConversionTask.java:[line 167]
+M V EI2: new org.jodconverter.local.task.LocalConversionTask(SourceDocumentSpecs, TargetDocumentSpecs, boolean, Map, Map, FilterChain) may expose internal representation by storing an externally mutable object into LocalConversionTask.storeProperties  At LocalConversionTask.java:[line 91]
+M D NP: Possible null pointer dereference in org.jodconverter.local.office.LocalOfficeProcessManager.stopProcess(boolean) due to return value of called method  Dereferenced at LocalOfficeProcessManager.java:[line 486]
+M D NP: Possible null pointer dereference in org.jodconverter.local.filter.text.LinkedImagesEmbedderFilter.doFilter(OfficeContext, XComponent, FilterChain) due to return value of called method  Method invoked at LinkedImagesEmbedderFilter.java:[line 67]
+M D NP: Possible null pointer dereference in org.jodconverter.local.filter.text.GraphicInserterFilter.insertGraphic(XComponentContext, XComponent) due to return value of called method  Method invoked at GraphicInserterFilter.java:[line 248]
+M D NP: Possible null pointer dereference in org.jodconverter.local.filter.text.GraphicInserterFilter.doFilter(OfficeContext, XComponent, FilterChain) due to return value of called method  Method invoked at GraphicInserterFilter.java:[line 206]
+M B CT: Exception thrown in class org.jodconverter.local.filter.text.GraphicInserterFilter at new org.jodconverter.local.filter.text.GraphicInserterFilter(String, int, int) will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.  At GraphicInserterFilter.java:[line 122]
+M B CT: Exception thrown in class org.jodconverter.local.filter.text.GraphicInserterFilter at new org.jodconverter.local.filter.text.GraphicInserterFilter(String, Map) will leave the constructor. The object under construction remains partially initialized and may be vulnerable to Finalizer attacks.  At GraphicInserterFilter.java:[line 170]
+M V EI2: org.jodconverter.local.LocalConverter$Builder.filterChain(FilterChain) may expose internal representation by storing an externally mutable object into LocalConverter$Builder.filterChain  At LocalConverter.java:[line 390]
+M M IS: Inconsistent synchronization of org.jodconverter.local.office.OfficeConnection.bridgeComponent; locked 66% of time  Unsynchronized access at OfficeConnection.java:[line 163]
+SpotBugs ended with exit code 1
